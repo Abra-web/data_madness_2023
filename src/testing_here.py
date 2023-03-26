@@ -175,9 +175,41 @@ data_2022 = pd.read_csv(join(data_folder,'survey_results_public2022.csv'))
 # age - Age
 # Gender - Gender
 # ConvertedCompYearly
+
+
+
+# Does money bring happiness in the tech industry?
+sat_2020, usd_2020 = data_2020['JobSat'], data_2020['ConvertedComp']
+usd_2019, sat_2019 = data_2019['ConvertedComp'], data_2019['JobSat']
+sat_2018, usd_2018 = data_2018['JobSatisfaction'], data_2018['ConvertedSalary']
+sat_2016, usd_2016 = data_2016['job_satisfaction'], data_2016['salary_midpoint'] # in USD
+sat_2015, usd_2015 = data_2015['Job Satisfaction'], data_2015['Compensation: midpoint'] # in USD
+sat_2013, usd_2013 = data_2013['What best describes your career / job satisfaction?'], data_2013['Including bonus, what is your annual compensation in USD?']
+sat_2012, usd_2012 = data_2012['What best describes your career / job satisfaction? '], data_2012['Including bonus, what is your annual compensation in USD?']
+sat_2011, usd_2011 = data_2011['Please rate your job/career satisfaction'], data_2011['Including bonus, what is your annual compensation in USD?']
+#Initialize new dataframes
+
+def make_new_df(usd_series,sat_series):
+    data = pd.DataFrame()
+    data['usd'] = usd_series
+    data['sat'] = sat_series
+    return data
+
+data_sat_2011 = make_new_df(usd_2011,sat_2011)
+
+data_sat_2012 = make_new_df(usd_2012,sat_2011)
+
+data_sat_2013 = make_new_df(usd_2013,sat_2013)
+
+data_sat_2015 = make_new_df(usd_2015,sat_2015)
+
+data_sat_2016 = make_new_df(usd_2016,sat_2016)
+
+data_sat_2018 = make_new_df(usd_2018,sat_2018)
+
+data_sat_2019 = make_new_df(usd_2019,sat_2019)
+
+data_sat_2020 = make_new_df(usd_2020,sat_2020)
+
+
 b=2
-
-
-
-
-
