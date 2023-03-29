@@ -19,5 +19,3 @@ Run `DA-23.ipynb` first to fetch the data in the `data` folder we made for you.
 3. How has salary impacted job satisfaction?
 `satisfaction.ipynb`
 
-4. How do we make sure that our conclusions are valid?
-`DA-23.ipynb`
