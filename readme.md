@@ -2,6 +2,8 @@
 
 Data analysis of objectives in [Stack Overflow](https://insights.stackoverflow.com/survey) from 2011 to 2022.
 
+## Video
+https://www.youtube.com/watch?v=PBJ_oZN2QOs
 ## Installation
 
 Install all imports.
