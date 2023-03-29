@@ -1,0 +1,33 @@
+Ethical Considerations
+How did you get the data (legally...)?
+- The data is directly observable (so open-source), because it is reported by subjects through a survey. Stack Overflow Annual Developer Survey (https://insights.stackoverflow.com/survey)
+
+Did you check the source?
+- Yes we did, Stack Overflow is a well-known and respected website. Additionally, the datasets were published in Stack Overflow’s own website.
+
+Are there considerations about the analysis you made?
+- For many altered columns through the years we assumed that it is still collected for the same goal (e.g., PlatformHaveWorkedWith = PlatformWorkedWith = HaveWorkedPlatform)
+- For one of the objectives we had to identify the types of tech groups, for this objective we decided that features “DEVTYPE”, “LANGUAGE”, “DATABASE”, “PLATFORM”, “WEBFRAME”, “MISCTECH”, “NEWCOLLABTOOL”, “TOOLSTECH”, “OFFICESTACKASYNC”, “OFFICESTACKSYNC” can be counted as “tech-related” features and these features were used for analysis of the objective.
+Sensitive questions like sexuality, age and gender were asked in the original dataset, but we did not take them into any analysis.
+
+Did you have to make decisions that affect the analysis?
+- We had to change some of the objectives for our analysis, because some of the  datasets did not contain the right columns. Sometimes the required data was present, but only in one or two out of 11 datasets we have, which made us not take it into consideration.
+- For the objective of identifying tech groups, to derive the conclusions we had to consider each feature as a different group. In other words, each feature was investigated independently. Hence, we disregard the possible tech group relations/patterns across all the features combined. This was done because trying to observe all the relationships of all the features together requires more advanced investigation (which is above our pay-grade :,).
+
+What are the limitations of your analysis and your conclusions?
+We fit our analysis into a storyline of the IT industry. However, we notice that this data set might be mostly over the users of StackOverflow from the US instead of a general phenomenon.
+
+The main limitations are that both the contents of the questions and the values of columns are altered each year, even if they are created for the same goal. Although the dataset seems very large, it consists of 11 survey results of different years, with different questions, format etc. This has caused for many inconsistencies or missing data and let to several required actions to be performed (e.g., manually finding features that has been created for the same goal in each different years’ dataset).
+Only the people that had done the survey were involved. Hence, it’s not the kind of data where you extract factual data about user usage. For example, a user could say that he/she uses Stack Overflow 20 minutes a day in the survey, but if we had checked the actual data from the website it might be well over an hour. Additionally, as the name mentions this is just a survey. So, these responses (and the conclusions we make) have much lower credit compared to an analysis that is made on a more scientific data.
+Additionally, the people who have done the survey were compensated by giving a “Census” badge on Stack Overflow. This might lead people to try to quickly rush to the end, which limits the honesty of the survey responses.
+
+Moreover, as realised in the preparation stage, Stack Overflow themself are aware of the limitation and the fact that the survey is inaccessible for several countries. Although some participants used VPNs to avoid the blocks, the accessibility is limited in this situation. (Reference: https://survey.stackoverflow.co/2022/#methodology-feedback) They did not provide a possible solution to this problem. Therefore, the analysis is not applicable to every country.
+
+What’s more, when looking at the data, more than half of the respondents are from the United States, so this survey mostly reflects the situation in that country.
+
+Who are the stakeholders of your project?
+	- People whoever are interested in the IT industry.
+	- People interested and active in the StackOverflow Community.
+
+Who can benefit from this project, who can be harmed, who is excluded, etc.
+- We do not think that any harm can be taken from this however. Some people might benefit, as this provides insights into the tech industry (mainly) in the US.
